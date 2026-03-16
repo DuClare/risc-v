@@ -1,9 +1,10 @@
+import riscv_pkg::*;
+
 module immediate_generator (
     input  logic [31:0] instruction,
     output logic [31:0] immediate
 );
 
-  import riscv_pkg::*;
   opcode_e opcode;
   assign opcode = instruction[6:0];
 

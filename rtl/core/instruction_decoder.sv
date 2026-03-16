@@ -1,3 +1,5 @@
+import riscv_pkg::*;
+
 module instruction_decoder (
     input logic [31:0] instruction,
     output opcode_e opcode,
@@ -7,8 +9,6 @@ module instruction_decoder (
     output logic [4:0] rs2,
     output logic [6:0] funct7
 );
-
-  import riscv_pkg::*;
 
   assign opcode = instruction[6:0];
   assign rd = instruction[11:7];

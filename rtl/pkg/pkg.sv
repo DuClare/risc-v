@@ -25,4 +25,28 @@ package riscv_pkg;
     OP     = 7'b0110011   // R-type
   } opcode_e;
 
+  typedef enum logic {
+    ALU_SRC_B_RS2 = 0,
+    ALU_SRC_B_IMM = 1
+  } alu_src_b_sel_e;
+
+  typedef enum logic [2:0] {
+    WB_NONE        = 3'd0,
+    WB_ALU_RESULT  = 3'd1,
+    WB_MEMORY_DATA = 3'd2,
+    WB_PC_PLUS_4   = 3'd3,
+    WB_IMM         = 3'd4,
+    WB_PC_PLUS_IMM = 3'd5
+  } wb_sel_e;
+
+
+  typedef enum logic [2:0] {
+    BRANCH_BEQ  = 3'd0,
+    BRANCH_BNE  = 3'd1,
+    BRANCH_BLT  = 3'd4,
+    BRANCH_BGE  = 3'd5,
+    BRANCH_BLTU = 3'd6,
+    BRANCH_BGEU = 3'd7
+  } branch_type_e;
+
 endpackage

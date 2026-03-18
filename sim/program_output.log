@@ -1,0 +1,16 @@
+WARNING: rtl/core/instruction_memory.sv:13: $readmemh(program.hex): Not enough words in the file for the requested range [0:511].
+VCD info: dumpfile tb_risc_v.vcd opened for output.
+WARNING: rtl/top/risc_v.sv:66: value is unhandled for priority or unique case statement
+         Time: 0  Scope: tb_risc_v.risc_v_inst
+WARNING: rtl/core/control_unit.sv:43: value is unhandled for priority or unique case statement
+         Time: 0  Scope: tb_risc_v.risc_v_inst.control_unit_inst
+WARNING: rtl/core/immediate_generator.sv:14: value is unhandled for priority or unique case statement
+         Time: 0  Scope: tb_risc_v.risc_v_inst.immediate_generator_inst
+WARNING: rtl/core/immediate_generator.sv:14: value is unhandled for priority or unique case statement
+         Time: 5  Scope: tb_risc_v.risc_v_inst.immediate_generator_inst
+x1 = 10
+x2 = 5
+x3 = 5
+x4 = 1
+x5 = 10
+verif/tb_risc_v.sv:26: $finish called at 325 (1s)

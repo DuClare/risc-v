@@ -10,7 +10,7 @@ module instruction_decoder (
     output logic [6:0] funct7
 );
 
-  assign opcode = instruction[6:0];
+  assign opcode = opcode_e'(instruction[6:0]);
   assign rd = instruction[11:7];
   assign funct3 = instruction[14:12];
   assign rs1 = instruction[19:15];

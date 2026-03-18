@@ -6,7 +6,7 @@ module immediate_generator (
 );
 
   opcode_e opcode;
-  assign opcode = instruction[6:0];
+  assign opcode = opcode_e'(instruction[6:0]);
 
   always_comb begin
     immediate = 32'd0;

@@ -1,12 +1,11 @@
-module alu
-(
+import riscv_pkg::*;
+
+module alu (
     input logic    [31:0] a,
     input logic    [31:0] b,
     input alu_op_e        op,
     output logic [31:0] result
 );
-
-import riscv_pkg::*;
 
   always_comb begin
     unique case (op)
